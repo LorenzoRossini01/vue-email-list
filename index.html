@@ -42,6 +42,12 @@
   <body>
     <div id="app" class="container">
       <h1>{{title}}</h1>
+      <button class="btn btn-primary" @click="generateEmail()">
+        Genera email
+      </button>
+      <ul>
+        <li v-for="email in emailArray">{{email}}</li>
+      </ul>
     </div>
 
     <!-- #main js -->
