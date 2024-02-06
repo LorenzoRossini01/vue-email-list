@@ -48,6 +48,9 @@
       <button class="btn btn-primary my-3" @click="generateEmail()">
         Genera email
       </button>
+      <div class="loading">
+        <i class="fa-solid fa-envelope fa-bounce fa-3x pt-4" v-if="loading"></i>
+      </div>
       <ul
         v-if="emailArray.length==10"
         class="list-group list-group-none text-center"
