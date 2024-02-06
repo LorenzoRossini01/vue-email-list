@@ -45,7 +45,7 @@
       <button class="btn btn-primary" @click="generateEmail()">
         Genera email
       </button>
-      <ul>
+      <ul v-if="emailArray.length==10">
         <li v-for="email in emailArray">{{email}}</li>
       </ul>
     </div>
